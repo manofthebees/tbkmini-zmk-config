@@ -17,5 +17,5 @@ include:
     shield: tbkblu_left
   - board: seeeduino_xiao_ble
     shield: tbkblu_right
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
+#  - board: seeeduino_xiao_ble
+#    shield: settings_reset
