@@ -1,0 +1,11 @@
+file_format: "1"
+id: tbkblu
+name: TBKblu
+type: shield
+url: https://github.com/manofthebees/tbkmini-zmk-config
+requires: [seeed_xiao]
+features:
+  -keys
+siblings:
+  - tbkblu_left
+  - tbkblu_right
