@@ -1,12 +1,15 @@
 #include "tbkblu.dtsi"
 
+&default_transform { // The matrix transform for this board is 6
+    col-offset = <6>;
+};
+
 &kscan0 {
     row-gpios
-        = <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row0
-        , <&xiao_d 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row1
-        , <&xiao_d 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row2
-        , <&xiao_d 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row3
-        , <&xiao_d 10  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row4
+        = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row0
+        , <&xiao_d 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row1
+        , <&xiao_d 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row2
+        , <&xiao_d 10  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row3
         ;
     col-gpios
         = <&xiao_d 0 (GPIO_ACTIVE_HIGH)> // col0
