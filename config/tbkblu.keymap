@@ -68,7 +68,7 @@
             >;
         };
 
-        epsilon {
+        mouse {
             bindings = <
 &trans  &trans  &trans     &kp UP_ARROW    &trans     &trans    &trans          &trans        &trans          &trans           &trans  &trans
 &trans  &trans  &mkp LCLK  &mkp MCLK       &mkp RCLK  &trans    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
