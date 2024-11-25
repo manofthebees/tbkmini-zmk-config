@@ -1,8 +1,35 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
+
+&msc {
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <40>;                 /* <--- How long time until max speed is reached */
+    delay-ms = <0>;
+};
+
+&mmv {
+    acceleration-exponent = <1>;
+    delay-ms = <0>;
+    time-to-max-speed-ms = <500>;             /* <--- How long time until max speed is reached (default: 500) */
+};
+
 
 / {
+    behaviors {
+        mouse_mode: mouse_mode {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_MODE";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <125>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <75>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
