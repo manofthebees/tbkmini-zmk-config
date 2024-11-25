@@ -3,6 +3,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 5
+
 &msc {
     acceleration-exponent = <1>;
     time-to-max-speed-ms = <40>;                 /* <--- How long time until max speed is reached */
