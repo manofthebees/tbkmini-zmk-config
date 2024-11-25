@@ -4,18 +4,21 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 5
 
-&msc {
-    acceleration-exponent = <1>;
-    time-to-max-speed-ms = <40>;                 /* <--- How long time until max speed is reached */
-    delay-ms = <0>;
+&caps_word {
+    continue-list = <UNDERSCORE MINUS SPACE>;
 };
 
 &mmv {
     acceleration-exponent = <1>;
     delay-ms = <0>;
     time-to-max-speed-ms = <500>;             /* <--- How long time until max speed is reached (default: 500) */
+};
+
+&mt {
+    quick-tap-ms = <65>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <90>;
 };
 
 / {
@@ -73,10 +76,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans     &kp UP_ARROW    &trans     &trans    &trans          &trans        &trans          &trans           &trans  &trans
-&trans  &trans  &mkp LCLK  &mkp MCLK       &mkp RCLK  &trans    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans     &kp DOWN_ARROW  &trans     &trans    &trans          &trans        &trans          &trans           &trans  &trans
-                           &trans          &trans     &trans    &trans          &trans        &trans
+&trans  &trans  &trans     &kp UP_ARROW  &trans     &trans    &trans          &trans        &trans          &trans           &trans  &trans
+&trans  &trans  &mkp LCLK  &mkp MCLK     &mkp RCLK  &trans    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans     &kp DOWN      &trans     &trans    &trans          &trans        &trans          &trans           &trans  &trans
+                           &trans        &trans     &trans    &trans          &trans        &trans
             >;
         };
     };
