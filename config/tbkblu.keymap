@@ -76,7 +76,7 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans     &kp UP_ARROW  &trans     &trans    &trans          &trans        &trans          &trans           &trans  &trans
+&to 5   &trans  &trans     &kp UP_ARROW  &trans     &trans    &trans          &trans        &trans          &trans           &trans  &trans
 &trans  &trans  &mkp LCLK  &mkp MCLK     &mkp RCLK  &trans    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans     &kp DOWN      &trans     &trans    &trans          &trans        &trans          &trans           &trans  &trans
                            &trans        &trans     &trans    &trans          &trans        &trans
@@ -85,7 +85,7 @@
 
         gaming {
             bindings = <
-&kp N1  &kp ESC    &kp Q  &kp W   &kp E      &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&kp N1  &kp ESC    &kp Q  &kp W   &kp E      &kp R        &trans  &trans  &trans  &trans  &trans  &to 0
 &kp N2  &kp LSHFT  &kp A  &kp S   &kp D      &kp F        &trans  &trans  &trans  &trans  &trans  &trans
 &kp N3  &kp TAB    &kp Z  &kp X   &kp C      &kp V        &trans  &trans  &trans  &trans  &trans  &trans
                           &trans  &kp SPACE  &kp LCTRL    &trans  &trans  &trans
