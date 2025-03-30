@@ -58,7 +58,7 @@
 
         gamma {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &trans        &trans        &trans        &trans        &trans
+&to 5   &trans  &trans  &trans  &trans  &trans        &trans    &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &kp LEFT  &kp UP        &kp DOWN      &kp RIGHT     &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans        &trans    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
                         &trans  &trans  &trans        &trans    &trans        &trans
@@ -76,7 +76,7 @@
 
         mouse {
             bindings = <
-&to 5   &trans  &trans     &kp UP_ARROW  &trans     &trans    &trans          &trans        &trans          &trans           &trans  &trans
+&trans  &trans  &trans     &kp UP_ARROW  &trans     &trans    &trans          &trans        &trans          &trans           &trans  &trans
 &trans  &trans  &mkp LCLK  &mkp MCLK     &mkp RCLK  &trans    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans     &kp DOWN      &trans     &trans    &trans          &trans        &trans          &trans           &trans  &trans
                            &trans        &trans     &trans    &trans          &trans        &trans
